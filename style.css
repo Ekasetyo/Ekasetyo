@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@600&display=swap');
+*{
+    margin: auto;
+    font-family: sans-serif;
+}
+
+/* bagian main 1*/
+.main1 {
+    box-shadow: 0px 1px 10px #ff6200;
+    background: #1f1f1f;
+    overflow: hidden;
+    padding: 15px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;      
+}
+
+
+.main1 h1 {
+    float: left;
+    color: #fff;
+    margin-left: 60px;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+}
+
+.main1 h1::first-letter{
+    background-color: #ff6200;
+    border-radius: 100%;
+    padding:2px 1px 3px 10px;
+}
+
+.menu {
+    float: right;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    font-weight: bolder;
+    display: block;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 16px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.menu ul li:last-child a {
+    margin-right: 30px;
+    
+}
+
+.menu ul li a:hover{
+    border-radius: 12px;
+    transition: 0.5s;
+    padding: 13px;
+    background-color: #ff7300;
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
+/*bagian main 2*/
+.main2{
+    background-color: #151515;
+    padding-bottom: 250px;
+}
+
+.konten h3{
+    padding-top: 200px;
+    padding-left: 100px;
+    margin-bottom: 20px;
+    color: #ff6200;
+    letter-spacing: 1px;
+    font-family: "Poppins";
+}
+
+.konten h1{
+    padding-left: 70px;
+    color: white;
+    font-family: Roboto;
+    text-shadow: 0 0 10px #ff6200db;
+}
+
+.konten p{
+    padding-top: 30px;
+    padding-left: 70px;
+    text-align: justify;
+    color: white;
+}
+
+.gambar img{
+    margin-top: 120px;
+    margin-right: 30px;
+    float: right;
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+    animation: saya1 2s ease-in-out infinite;
+    z-index: -1;
+}
+
+.tombol img{
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+}
+
+.tombol a{
+    position: relative;
+    text-decoration: none;
+    background: #2f00ff;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 10px;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 15px;
+    display: inline-block;
+    margin-left: 110px;
+    margin-top: 30px;
+    cursor: pointer;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.tombol a::before{
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ff6200;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.tombol a:hover::before{
+    width: 100%;
+}
+
+
+@keyframes saya1 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+/*bagian main 3*/
+
+.main3{
+    background-color: #292929;
+    padding-bottom: 500px;
+}
+
+.gambar2 img{
+    margin-top: 150px;
+    margin-left: 30px;
+    margin-right: 50px;
+    float: left;
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+    animation: saya1 2s ease-in-out infinite;
+    z-index: -1;
+}
+
+.konten2 h4{
+    color: white;
+    padding-top: 120px;
+    padding-bottom: 20px;
+    text-align: center;
+
+}
+
+.konten2 p::first-letter{
+    margin-left: 50px;
+}
+
+.konten2 p{
+    float: right;
+    padding: 20px 70px;
+    margin-right: 60px;
+    text-align: justify;
+    border: 1px solid black;
+    border-radius: 20px;
+    background: #ff6200;
+    color: white;
+    height: 250px;
+    width: 38%;
+    font-family: "Open sans";
+}
+
+/* bagian main4 */
+.main4{
+    background-color: #515151;
+    padding-bottom: 150px; 
+}
+
+.main4 h3{
+    padding-top: 100px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: white;
+}
+
+.sosmed{
+    margin: auto;
+    margin-top: 40px;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.sosmed a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border-radius: 60%;
+    border: 2px solid white;
+}
+
+
+.sosmed h4{
+    margin-top: 10px;
+    color: white;
+    animation: saya1 2s ease-in-out infinite;
+}
+
+.sosmed img{
+    padding-top: 25px;
+}
+
+.sosmed-fb h4{
+    margin-left: 70px;
+}
+
+.sosmed-fb a{
+    background-color: blue;
+    margin-left: 70px;
+    animation: sosmed 2s ease-in-out infinite;
+}
+
+.sosmed-ig h4{
+    animation: sosmed2 2s ease-in-out infinite;
+}
+
+.sosmed-ig a{
+    background: linear-gradient(to right, #833ab4, #ff007f, #ffa500);
+    animation: sosmed2 2s ease-in-out infinite;
+}
+
+.Github h4{
+    animation: sosmed 2s ease-in-out infinite;
+}
+
+.Github a{
+    background-color: #181717;
+    animation: sosmed 2s ease-in-out infinite;
+}
+
+.sosmed-yt h4{
+    animation: sosmed2 2s ease-in-out infinite;
+}
+
+.sosmed-yt a{
+    background-color: red;
+    animation: sosmed2 2s ease-in-out infinite;
+}
+
+.steam h4{
+    margin-right: 68px;
+}
+
+.steam a{
+    background: linear-gradient(to bottom, #171a21, #1b2838, #2a475e, #66c0f4);
+    margin-right: 70px;
+    animation: sosmed 2s ease-in-out infinite;
+}
+
+
+@keyframes sosmed{
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes sosmed2{
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/* bagian main5*/
+.main5{
+    background-color: #aaaaaa;
+    text-align: center;
+    padding-bottom: 130px;
+}
+
+.main5 h3{
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.Kontak{
+    margin: auto;
+    margin-top: 40px;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.Kontakinfo h4{
+    letter-spacing: 1px;
+    font-family: "Open sans";
+    margin-bottom: 15px;
+}
+
+.Kontakinfo a{
+    color: black;
+    text-decoration: none;
+}
+
+.Kontakinfo a:hover{
+    font-family: "Open sans";
+    text-decoration: underline;
+    font-family: "Poppins";
+}
+
+.Kontakinfo{
+    color: white;
+    display: inline-block;
+    height: 50px;
+    width: 250px;
+}
+
+
+
+/*footer*/
+footer{
+    padding: 25px;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
